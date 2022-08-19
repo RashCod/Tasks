@@ -38,3 +38,8 @@ function positiveSum(arr) {
     }
     return sum
 }
+
+
+function invert(array) {
+    return array.map((elem) => elem >= 0 ? elem * -1 : Math.abs(elem))
+}
