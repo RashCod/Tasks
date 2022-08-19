@@ -43,3 +43,9 @@ function positiveSum(arr) {
 function invert(array) {
     return array.map((elem) => elem >= 0 ? elem * -1 : Math.abs(elem))
 }
+
+
+function abbrevName(name) {
+    return name.match(/[A-Z]/g).join('.')
+
+}
