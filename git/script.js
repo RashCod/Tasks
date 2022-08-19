@@ -25,3 +25,16 @@ function accum(s) {
 function doubleChar(str) {
     return str.split('').map((elem) => elem.repeat(2)).join('')
 }
+
+
+function positiveSum(arr) {
+    let sum = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] > 0) {
+            sum += arr[i]
+        } if (arr[i] === 0) {
+            return 0
+        }
+    }
+    return sum
+}
