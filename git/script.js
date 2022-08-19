@@ -52,7 +52,7 @@ function abbrevName(name) {
 
 
 const maskify = (cc) => {
-    let arr = cc.slice(cc.length - 4)
-    return cc.replace(arr, '####')
+    let arr = cc.slice(0, cc.length - 4)
+    return cc.replace(arr, '#'.repeat(cc.length - 4))
 
 }
