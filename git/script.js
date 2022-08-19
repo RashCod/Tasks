@@ -49,3 +49,10 @@ function abbrevName(name) {
     return name.match(/[A-Z]/g).join('.')
 
 }
+
+
+const maskify = (cc) => {
+    let arr = cc.slice(cc.length - 4)
+    return cc.replace(arr, '####')
+
+}
