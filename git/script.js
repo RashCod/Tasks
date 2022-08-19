@@ -56,3 +56,12 @@ const maskify = (cc) => {
     return cc.replace(arr, '#'.repeat(cc.length - 4))
 
 }
+
+
+function findMultiples(integer, limit) {
+    let arr = []
+    for (let i = integer; i <= limit; i += integer) {
+        arr.push(i)
+    }
+    return arr
+}
