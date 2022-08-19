@@ -20,3 +20,8 @@ function accum(s) {
     let res = s.split('').map((elem, i) => elem.repeat(i + 1)).map((elem) => elem.slice(0, 1).toUpperCase() + elem.slice(1).toLowerCase()).join('-')
     return res
 }
+
+
+function doubleChar(str) {
+    return str.split('').map((elem) => elem.repeat(2)).join('')
+}
