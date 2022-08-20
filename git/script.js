@@ -89,3 +89,9 @@ function hero(bullets, dragons) {
         return false
     }
 }
+
+
+function squareDigits(num) {
+    return +(String(num).split('').map((elem) => elem * elem).join(''))
+}
+console.log(squareDigits(3212)) //9414);
