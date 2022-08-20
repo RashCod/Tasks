@@ -95,3 +95,12 @@ function squareDigits(num) {
     return +(String(num).split('').map((elem) => elem * elem).join(''))
 }
 console.log(squareDigits(3212)) //9414);
+
+
+
+function vaporcode(string) {
+    let array = String(string.toUpperCase().split(''));
+    return array.replace(/[^a-zа-яё0-9\s]/gi, ' ').replace(/\s+/g, '  ');
+
+}
+console.log(vaporcode("Lets go to the movies")) //"L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S")
