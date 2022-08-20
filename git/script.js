@@ -77,5 +77,5 @@ function minMax(arr) {
 
 
 function removeExclamationMarks(s) {
-    return s.replace(/[^a-zа-яё0-9\s]/gi, '')
+    return s.replace(/!/gi, '')
 }
