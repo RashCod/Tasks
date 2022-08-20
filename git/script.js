@@ -72,6 +72,10 @@ function minMax(arr) {
     let max = Math.max(...arr)
     return [min, max]
 
+}
 
 
+
+function removeExclamationMarks(s) {
+    return s.replace(/[^a-zа-яё0-9\s]/gi, '')
 }
