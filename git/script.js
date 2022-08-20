@@ -79,3 +79,13 @@ function minMax(arr) {
 function removeExclamationMarks(s) {
     return s.replace(/!/gi, '')
 }
+
+
+
+function hero(bullets, dragons) {
+    if (bullets >= (dragons * 2)) {
+        return true
+    } else {
+        return false
+    }
+}
