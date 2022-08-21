@@ -114,3 +114,20 @@ function modifyMultiply(str, loc, num) {
     return result
 }
 console.log(modifyMultiply("This is a string", 3, 5)) //"string-string-string-string-string"
+
+
+
+function fakeBin(x) {
+    x = x + '';
+    let z = [];
+    for (let i = 0; i < x.length; i++) {
+        if ((x[i] * 1) < 5) {
+            z[i] = 0;
+        } else {
+            z[i] = 1;
+        }
+    }
+    return String(z).replace(/[^0-9]/g, '');
+
+}
+console.log(fakeBin('45385593107843568'))
