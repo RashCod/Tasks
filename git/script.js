@@ -118,16 +118,6 @@ console.log(modifyMultiply("This is a string", 3, 5)) //"string-string-string-st
 
 
 function fakeBin(x) {
-    x = x + '';
-    let z = [];
-    for (let i = 0; i < x.length; i++) {
-        if ((x[i] * 1) < 5) {
-            z[i] = 0;
-        } else {
-            z[i] = 1;
-        }
-    }
-    return String(z).replace(/[^0-9]/g, '');
-
+    return x.split('').map(elem => elem < 5 ? 0 : 1).join('')
 }
 console.log(fakeBin('45385593107843568'))
