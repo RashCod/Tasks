@@ -104,3 +104,13 @@ function vaporcode(string) {
 
 }
 console.log(vaporcode("Lets go to the movies")) //"L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S")
+
+
+
+function modifyMultiply(str, loc, num) {
+    let res = str.split(' ')
+    let ress = res[loc] + '-'
+    let result = ress.repeat(num).slice(0, -1)
+    return result
+}
+console.log(modifyMultiply("This is a string", 3, 5)) //"string-string-string-string-string"
