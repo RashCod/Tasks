@@ -121,3 +121,17 @@ function fakeBin(x) {
     return x.split('').map(elem => elem < 5 ? 0 : 1).join('')
 }
 console.log(fakeBin('45385593107843568'))
+
+
+
+function countBy(x, n) {
+    let z = [];
+    for (let i = x; i <= n; i++) {
+        z.push(x * i)
+    }
+
+    return z;
+}
+
+console.log(countBy(1, 10)) // [1,2,3,4,5,6,7,8,9,10])
+console.log(countBy(2, 5))
