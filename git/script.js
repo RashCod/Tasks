@@ -135,3 +135,18 @@ function countBy(x, n) {
 
 console.log(countBy(1, 10)) // [1,2,3,4,5,6,7,8,9,10])
 console.log(countBy(2, 5))
+
+
+
+
+function divisibleBy(numbers, divisor) {
+    let result = []
+    for (let elem of numbers) {
+        if (elem % divisor === 0) {
+            result.push(elem)
+        }
+    }
+    return result
+}
+
+console.log(divisibleBy([1, 2, 3, 4, 5, 6], 2));
