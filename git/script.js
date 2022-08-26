@@ -150,3 +150,14 @@ function divisibleBy(numbers, divisor) {
 }
 
 console.log(divisibleBy([1, 2, 3, 4, 5, 6], 2));
+
+
+
+function between(a, b) {
+    let result = []
+    for (let i = a; i <= b; i++) {
+        result.push(i)
+    }
+    return result
+}
+console.log(between(1, 4)) // [1, 2, 3, 4]
