@@ -161,3 +161,12 @@ function between(a, b) {
     return result
 }
 console.log(between(1, 4)) // [1, 2, 3, 4]
+
+
+
+function solution(string) {
+    return string.replace(/([A-Z])/g, ' $1')
+
+}
+
+console.log(solution('camelCasing')) //'camel Casing',)
