@@ -170,3 +170,19 @@ function solution(string) {
 }
 
 console.log(solution('camelCasing')) //'camel Casing',)
+
+
+
+
+
+var summation = function (num) {
+    let result = 0
+    for (let i = 0; i <= num; i++) {
+        if (i <= num) {
+            result += i
+        }
+    }
+    return result
+}
+
+console.log((summation(8))) // 36));
