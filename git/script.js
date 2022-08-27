@@ -186,3 +186,11 @@ var summation = function (num) {
 }
 
 console.log((summation(8))) // 36));
+
+
+
+function solution(str, ending) {
+    return str.endsWith(ending)
+}
+
+console.log(solution('abcde', 'cde'))//, true)
