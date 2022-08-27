@@ -194,3 +194,29 @@ function solution(str, ending) {
 }
 
 console.log(solution('abcde', 'cde'))//, true)
+
+
+
+function XO(str) {
+    let x = []
+    let o = []
+    for (let i = 0; i < str.length; i++) {
+        if (str[i].toLowerCase() == 'x') {
+            x.push(str[i])
+        } else if (str[i].toLowerCase() == 'o') {
+            o.push(str[i])
+        }
+    }
+    if (x.length === o.length) {
+        return true
+    } else {
+        return false
+    }
+
+}
+
+console.log(XO('xo'))//true);
+console.log(XO("xxOo"))//true);
+console.log(XO("xxxm")) //false);
+console.log(XO("Oo")) //false);
+console.log(XO("ooom")) //false);
