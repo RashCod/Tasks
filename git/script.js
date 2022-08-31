@@ -248,7 +248,7 @@ console.log(points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2
 
 function getAverage(marks) {
     let sum = marks.reduce((acum, elem) => acum + elem, 0)
-    return Math.round(sum / marks.length)
+    return Math.floor(sum / marks.length)
 }
 
 
