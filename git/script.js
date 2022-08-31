@@ -220,6 +220,10 @@ console.log(XO("xxOo"))//true);
 console.log(XO("xxxm")) //false);
 console.log(XO("Oo")) //false);
 console.log(XO("ooom")) //false);
+
+
+
+
 function points(games) {
     let result = 0
     games.map(function (elem) {
