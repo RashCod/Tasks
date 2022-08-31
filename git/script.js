@@ -277,3 +277,13 @@ function twoSum(numbers, target) {
 
 console.log(twoSum([1234, 5678, 9012], 14690)) //target = 14690)
 console.log(twoSum([1, 2, 3], 4))// returns [0, 2] or [2, 0])
+
+
+
+
+function reverseWords(str) {
+    let arr = str.split(' ')
+    return arr.reverse().join(' ')
+}
+
+console.log(reverseWords("hello world!")) //"world! hello")
