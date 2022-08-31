@@ -242,3 +242,14 @@ function points(games) {
 
 }
 console.log(points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"]))
+
+
+
+
+function getAverage(marks) {
+    let sum = marks.reduce((acum, elem) => acum + elem, 0)
+    return Math.round(sum / marks.length)
+}
+
+
+console.log(getAverage([1, 2, 3, 4, 5,])) //3);)
