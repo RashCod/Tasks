@@ -220,3 +220,21 @@ console.log(XO("xxOo"))//true);
 console.log(XO("xxxm")) //false);
 console.log(XO("Oo")) //false);
 console.log(XO("ooom")) //false);
+function points(games) {
+    let result = 0
+    games.map(function (elem) {
+        let x = elem[0]
+        let y = elem[2]
+        if (x > y) {
+            result += 3
+        } else if (x == y) {
+            result += 1
+        } else {
+            result += 0
+        }
+    })
+    return result
+
+
+}
+console.log(points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"]))
