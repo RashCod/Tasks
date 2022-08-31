@@ -253,3 +253,11 @@ function getAverage(marks) {
 
 
 console.log(getAverage([1, 2, 3, 4, 5,])) //3);)
+
+
+
+
+function twiceAsOld(papa, sin) {
+    return sin * 2 - papa
+}
+console.log(twiceAsOld(55, 30)) // 5);
