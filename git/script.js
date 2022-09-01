@@ -355,3 +355,15 @@ function monkeyCount(n) {
   
   
     console.log(monkeyCount(5)) // [1, 2, 3, 4, 5]);
+
+
+
+
+    function highAndLow(numbers){
+        let num = numbers.split(' ').map(el => +el)
+        let result = Math.max(...num) + ' ' + (Math.min(...num))
+        return result + ''
+        
+      }
+      
+      console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")) // "42 -9");
