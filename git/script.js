@@ -308,3 +308,18 @@ console.log(first(arr)) //=> ['a'];
 console.log(first(arr, 2)) //=> ['a', 'b']
 console.log(first(arr, 3)) //=> ['a', 'b', 'c'];
 console.log(first(arr, 0)) //=> [];
+
+
+
+
+function oddCount(n){
+    let res = []
+    for(let i = 0; i < n; i++){
+      if(i % 2 !== 0){
+        res.push(i)
+      }
+    }
+    return res.length
+  }
+  
+  console.log(oddCount(15)) // 7)
