@@ -323,3 +323,12 @@ function oddCount(n){
   }
   
   console.log(oddCount(15)) // 7)
+
+
+
+  const ArrowFunc = function(arr) {
+    return arr.map((el)=> String.fromCharCode(el)).join('')
+  
+  }
+  
+  console.log(ArrowFunc([84,101,115,116])) //, 'Test', 'Convert those numbers to letters')
