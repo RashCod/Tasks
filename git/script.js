@@ -342,3 +342,16 @@ function oddCount(n){
 
 
 console.log(addLength('apple ban')) //["apple 5", "ban 3"]
+
+
+
+function monkeyCount(n) {
+    let res = []
+    for(let i = 1; i <= n; i++){
+      res.push(i)
+    }
+    return res
+  }
+  
+  
+    console.log(monkeyCount(5)) // [1, 2, 3, 4, 5]);
