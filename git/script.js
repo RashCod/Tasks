@@ -296,3 +296,15 @@ function arrayPlusArray(arr1, arr2) {
 
 
   console.log(arrayPlusArray([1, 2, 3], [4, 5, 6])) //21))
+
+
+
+  function first(arr, n) {
+    return n===undefined? arr.slice(0,1) : arr.slice(0,n)
+  }
+
+  var arr = ['a', 'b', 'c', 'd', 'e'];
+console.log(first(arr)) //=> ['a'];
+console.log(first(arr, 2)) //=> ['a', 'b']
+console.log(first(arr, 3)) //=> ['a', 'b', 'c'];
+console.log(first(arr, 0)) //=> [];
