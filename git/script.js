@@ -332,3 +332,13 @@ function oddCount(n){
   }
   
   console.log(ArrowFunc([84,101,115,116])) //, 'Test', 'Convert those numbers to letters')
+
+
+
+  function addLength(str) {
+    return str.split(' ').map(elem => elem + ' ' +  elem.length)
+  }
+  
+
+
+console.log(addLength('apple ban')) //["apple 5", "ban 3"]
