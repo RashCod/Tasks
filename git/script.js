@@ -378,3 +378,25 @@ const isElementInArray = (inputArray, searchElement) => {
 console.log(isElementInArray(transport,'Bus'))
 console.log(isElementInArray(transport,'Phone'))
 console.log(isElementInArray(transport,'Airplane'))
+
+
+
+
+
+const a = [1,2,3]
+const b = [1,2,3]
+const c = [2,1,3]
+const d = [1,2,3,4]
+
+const areArraysEquals = (firstArray, SecondArray) => {
+    return firstArray.length == SecondArray.length 
+    &&
+     firstArray.every((el,index) => SecondArray[index] == el)
+}
+
+
+console.log(areArraysEquals(a,b))
+console.log(areArraysEquals(a,c))
+console.log(areArraysEquals(a,d))
+
+
