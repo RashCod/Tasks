@@ -367,3 +367,14 @@ function monkeyCount(n) {
       }
       
       console.log(highAndLow("8 3 -5 42 -1 0 0 -9 4 7 4 -4")) // "42 -9");
+
+
+
+const transport = ['Bus' , 'Car', 'Bicycle', 'Airplane']
+
+const isElementInArray = (inputArray, searchElement) => {
+    return inputArray.includes(searchElement)
+}
+console.log(isElementInArray(transport,'Bus'))
+console.log(isElementInArray(transport,'Phone'))
+console.log(isElementInArray(transport,'Airplane'))
