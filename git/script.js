@@ -450,3 +450,12 @@ const factorial = (n) => {
 }
 
 console.log(factorial(5))
+
+
+
+function arrayDiff(a, b) {
+    return a.reduce((ac,el) => !b.includes(el) ? ac.concat(el) : ac, [])
+}
+
+
+console.log(arrayDiff([1,2,2],[1]))
