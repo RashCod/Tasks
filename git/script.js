@@ -438,3 +438,15 @@ console.log(isElementInArray(['flexbox', 'css'], tags))
 console.log(isElementInArray({title: 'Apple', quantity:25},fruits))
 console.log(isElementInArray({title: 'Banana'},fruits))
 console.log(isElementInArray(25,primitiveTypesArray))
+
+
+
+
+
+
+
+const factorial = (n) => {
+    return n ? n * factorial(n - 1):1
+}
+
+console.log(factorial(5))
