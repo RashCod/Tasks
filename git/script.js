@@ -482,3 +482,16 @@ var maxSequence = function(arr){
   }
 
 console.log(maxSequence([-2, 1, -3, 4, -1, 2, 1, -5, 4])) // 6);
+
+
+
+
+function removeSmallest(numbers) {
+    let min = Math.min(...numbers)
+    let index = numbers.indexOf(min)
+    return numbers.filter((el,ind) => ind !== index)
+  }
+
+  console.log(removeSmallest([1, 2, 3, 4, 5])) // [2, 3, 4, 5],
+  console.log(removeSmallest([1,2,3,4,1])) // [2,3,4]
+
