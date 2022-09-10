@@ -408,3 +408,16 @@ function squareOrSquareRoot(array) {
 }
 
 console.log(squareOrSquareRoot([4, 3, 9, 7, 2, 1])); // 2,9,3,49,4,1
+
+function contamination(text, char) {
+  if (text == "" || char == "") {
+    return "";
+  }
+  return char.repeat(text.length);
+}
+
+console.log(contamination("abc", "z")); // "zzz")
+console.log(contamination("", "z"), "");
+console.log(contamination("abc", ""), "");
+console.log(contamination("_3ebzgh4", "&")); // "&&&&&&&&")
+console.log(contamination("//case", " ")); // "      ")
