@@ -432,3 +432,9 @@ function predictAge(...age8) {
 }
 
 console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45)); //86);
+
+function vaporcode(string) {
+  return string.toUpperCase().split(" ").join("").split("").join`  `;
+}
+
+console.log(vaporcode("Lets go to the movies")); //"L  E  T  S  G  O  T  O  T  H  E  M  O  V  I  E  S")
