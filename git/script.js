@@ -421,3 +421,14 @@ console.log(contamination("", "z"), "");
 console.log(contamination("abc", ""), "");
 console.log(contamination("_3ebzgh4", "&")); // "&&&&&&&&")
 console.log(contamination("//case", " ")); // "      ")
+
+function predictAge(...age8) {
+  let one = [...age8]
+    .map((el, index) => {
+      return el * el;
+    })
+    .reduce((acc, el) => acc + el);
+  return Math.floor(Math.sqrt(one) / 2);
+}
+
+console.log(predictAge(65, 60, 75, 55, 60, 63, 64, 45)); //86);
