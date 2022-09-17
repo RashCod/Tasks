@@ -451,3 +451,18 @@ function firstNonConsecutive(arr) {
 console.log(firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]));
 
 console.log(firstNonConsecutive([1, 2, 3, 4, 5, 6, 7, 10]));
+
+function pattern(n) {
+  let res = "";
+  for (let i = 0; i <= n; i++) {
+    for (let j = 1; j <= i; j++) {
+      res += i;
+    }
+    res += "\n";
+  }
+  return res.slice(0, -1);
+}
+
+console.log(pattern(1)); //,"1");
+console.log(pattern(5)); //"1\n22");
+// console.log(pattern(5)); //"1\n22\n333\n4444\n55555");
