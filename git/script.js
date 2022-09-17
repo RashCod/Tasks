@@ -481,3 +481,30 @@ function stringy(size) {
 console.log(stringy(6)); // '101010'
 
 console.log(stringy(31)); // '1010101010101010101010101010101'
+
+function greet(lang) {
+  const obj = {
+    english: "Welcome",
+    czech: "Vitejte",
+    danish: "Velkomst",
+    dutch: "Welkom",
+    estonian: "Tere tulemast",
+    finnish: "Tervetuloa",
+    flemish: "Welgekomen",
+    french: "Bienvenue",
+    german: "Willkommen",
+    irish: "Failte",
+    italian: "Benvenuto",
+    latvian: "Gaidits",
+    lithuanian: "Laukiamas",
+    polish: "Witamy",
+    spanish: "Bienvenido",
+    swedish: "Valkommen",
+    welsh: "Croeso",
+  };
+  return obj[lang] || "Welcome";
+}
+
+console.log(greet("english"));
+console.log(greet("french"));
+console.log(greet(""));
