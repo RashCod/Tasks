@@ -466,3 +466,18 @@ function pattern(n) {
 console.log(pattern(1)); //,"1");
 console.log(pattern(5)); //"1\n22");
 // console.log(pattern(5)); //"1\n22\n333\n4444\n55555");
+
+function stringy(size) {
+  let result = "";
+  for (let i = 1; i <= size / 2; i++) {
+    result += "10";
+  }
+  if (size % 2 !== 0) {
+    return (result += "1");
+  }
+  return result;
+}
+
+console.log(stringy(6)); // '101010'
+
+console.log(stringy(31)); // '1010101010101010101010101010101'
