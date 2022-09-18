@@ -508,3 +508,16 @@ function greet(lang) {
 console.log(greet("english"));
 console.log(greet("french"));
 console.log(greet(""));
+
+function houseNumbersSum(inputArray) {
+  let result = 0;
+  for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i] > 0) {
+      result += inputArray[i];
+    }
+    if (inputArray[i] === 0) {
+      break;
+    }
+  }
+  return result;
+}
