@@ -340,10 +340,10 @@ const fruits = [
 
 const primitiveTypesArray = [25, "x", true, undefined, null];
 
-const isElementInArray = (searchElement, inputArray) => {
-  const jsonConverteble = JSON.stringify(inputArray);
-  return jsonConverteble.includes(JSON.stringify(searchElement));
-};
+// const isElementInArray = (searchElement, inputArray) => {
+//   const jsonConverteble = JSON.stringify(inputArray);
+//   return jsonConverteble.includes(JSON.stringify(searchElement));
+// };
 
 // const isElementInArray = (searchElement, inputArray) => {
 //     if(typeof searchElement !== 'object'){
@@ -521,3 +521,12 @@ function houseNumbersSum(inputArray) {
   }
   return result;
 }
+
+function toAcronym(inp) {
+  return inp
+    .toUpperCase()
+    .split(" ")
+    .map((el) => el[0])
+    .join("");
+}
+console.log(toAcronym("Code Wars")); //CW
