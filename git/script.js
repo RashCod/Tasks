@@ -530,3 +530,11 @@ function toAcronym(inp) {
     .join("");
 }
 console.log(toAcronym("Code Wars")); //CW
+
+function getCount(str) {
+  return [...str].reduce((acc, el) => acc + "aeiou".includes(el), 0);
+}
+
+console.log(getCount("abracadabra")); // 5) )
+
+console.log(getCount("pear tree")); //4
