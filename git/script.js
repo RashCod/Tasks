@@ -548,3 +548,13 @@ console.log(removeUrlAnchor(removeUrlAnchor("www.codewars.com/katas/"))); //'www
 console.log(removeUrlAnchor("www.codewars.com#about")); //'www.codewars.com'))
 
 console.log(removeUrlAnchor("www.codewars.com/katas/?page=1#about")); //'www.codewars.com/katas/?page=1')))
+
+function pipeFix(numbers) {
+  let result = [];
+  for (let i = numbers[0]; i <= numbers.slice(-1); i++) {
+    result.push(i);
+  }
+  return result;
+}
+
+console.log(pipeFix([1, 2, 3, 5, 6, 7, 8, 9]));
