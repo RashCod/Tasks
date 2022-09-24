@@ -538,3 +538,13 @@ function getCount(str) {
 console.log(getCount("abracadabra")); // 5) )
 
 console.log(getCount("pear tree")); //4
+
+function removeUrlAnchor(url) {
+  let index = [...url].indexOf("#");
+  return index == -1 ? url : url.slice(0, index);
+}
+
+console.log(removeUrlAnchor(removeUrlAnchor("www.codewars.com/katas/"))); //'www.codewars.com/katas/')))
+console.log(removeUrlAnchor("www.codewars.com#about")); //'www.codewars.com'))
+
+console.log(removeUrlAnchor("www.codewars.com/katas/?page=1#about")); //'www.codewars.com/katas/?page=1')))
