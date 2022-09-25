@@ -558,3 +558,13 @@ function pipeFix(numbers) {
 }
 
 console.log(pipeFix([1, 2, 3, 5, 6, 7, 8, 9]));
+
+var capitals = function (word) {
+  let result = [];
+  [...word].map((element, index) => {
+    if (element.toUpperCase() === element) {
+      result.push(index);
+    }
+  });
+  return result;
+};
